@@ -1,20 +1,31 @@
-package linkedListInsertion;
+package kthFromTheEnd;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
- * The LinkedList class that holds its instance methods for append.
+ * The LinkedList class
  */
 public class LinkedList {
 
     public Node head;
-//    public Node current;
+    public Node current;
 
     public LinkedList(){
 
     }
 
+    /**
+     * This method takes a number, k, as a parameter. Return the node’s value that is k
+     * from
+     *
+     *
+     * @param index
+     */
+    public int kthFromTheEnd(int index){
+        return 0;
+    }
 
     /**
      * Adds a new node with the given value to the end of the list
@@ -24,11 +35,11 @@ public class LinkedList {
     public void append(int value) throws AssertionError{
 
         if(head == null){
-            Node current = new Node(value);
+            current = new Node(value);
             head = current;
         }
         else{
-            Node current = head;
+            current = head;
 
             while (current.next != null) {
                 current = current.next;
@@ -45,20 +56,16 @@ public class LinkedList {
      * @param value
      * @param newVal
      */
-    public void insertBefore(int value, int newVal){
+    public void insertBefore(int value, int newVal) throws NullPointerException{
 
         if(head.data == value ){
             head = new Node(newVal);
         }
         else{
-            Node current = head;
+            current = head;
 
             while(current.next.data != value){
                 current = current.next;
-
-                if(current == null){
-                    throw new NullPointerException("Value must contain in list");
-                }
             }
             Node newNode = new Node(newVal);
             newNode.next = current.next;
@@ -72,14 +79,11 @@ public class LinkedList {
      * @param value
      * @param newValue
      */
-    public void insertAfter(int value, int newValue){
-        Node current = head;
+    public void insertAfter(int value, int newValue) throws NullPointerException{
+        current = head;
 
         while(current.data != value){
             current = current.next;
-            if(current == null){
-                throw new IllegalStateException("Value must contain in list");
-            }
         }
 
         Node newNode = new Node(newValue);
@@ -91,6 +95,36 @@ public class LinkedList {
         }
     }
 
+    /**
+     * This method inserts which takes any value as an argument and adds a new node with that value to the head of the
+     * list with an O(1) Time performance.
+     *
+     * @param value
+     */
+    public void insert(int value){
+        Node newNode = new Node(value);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    /**
+     *
+     * This method called includes which takes any value as an argument and returns a boolean result depending on
+     * whether that value exists as a Node’s value somewhere within the list.
+     *
+     * @param value
+     * @return boolean
+     */
+    public boolean includes(int value){
+        current = head;
+        while(current != null){
+            if(current.data == value){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
 
     /**
      * This method takes in no arguments and returns a collection all of the current Node values in the Linked List
@@ -100,7 +134,7 @@ public class LinkedList {
     public List<Node> print(){
         List<Node> newList = new ArrayList<>();
 
-        Node current = head;
+        current = head;
 
         while(current != null){
             newList.add(current);
@@ -108,7 +142,7 @@ public class LinkedList {
         }
         return newList;
     }
-}
 
+}
 
 

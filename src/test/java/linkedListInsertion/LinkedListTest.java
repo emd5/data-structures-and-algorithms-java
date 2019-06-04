@@ -1,6 +1,5 @@
 package linkedListInsertion;
 
-import linkedlist.Node;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -150,13 +149,31 @@ public class LinkedListTest {
         List<Node> expectedList = linkedList.print();
         int actualFirstIndexValue = actual.get(5).data;
         assertTrue("Insert value 10 should be at index 0", expectedList.get(5).data == actualFirstIndexValue);
-
-
     }
 
-    @Test(expected = NullPointerException.class)
+
+
+    @Test(expected = IllegalStateException.class)
     public void testInsertAfterInLastNodeDoesNotExist(){
         LinkedList linkedList = new LinkedList();
+        linkedList.append(1);
+        linkedList.append(2);
+        linkedList.append(3);
+        linkedList.append(4);
+        linkedList.append(5);
+
+        linkedList.insertAfter(6,10);
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testInsertAfterInLastNodeDoesNotExist2(){
+        LinkedList linkedList = new LinkedList();
+        try{
+            linkedList.insertAfter(9,10);
+            fail("inserting after should throw an exception on an empty list");
+        } catch (IllegalStateException e){
+            assertNull("Null");
+        }
         linkedList.append(1);
         linkedList.append(2);
         linkedList.append(3);
