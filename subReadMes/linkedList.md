@@ -11,21 +11,24 @@ To implement the linked list and node class. Created instance methods for the li
 ## Solution
 [Code](../src/main/java/linkedlist/LinkedList.java) | [Tests](../src/test/java/linkedlist/LinkedListTest.java)
 
-##Features
+## Features
 
 
 ***insert()*** S: O(1) T: O(1)
+
 - [x] Define a method called insert which takes any value as an argument and adds a new node with that value to the 
 head 
 of the list with an O(1) Time performance.
 
 ***includes()*** S: O(1) T: O(n)
+
 - [x] Define a method called includes which takes any value as an argument and returns a boolean result depending on 
 whether 
 that value exists as a Node’s value somewhere within the list.
 
 ***print()*** S: O(n) T: O(n)
-- [x ]Define a method called print which takes in no arguments and returns a collection all of the current Node values
+
+- [x]Define a method called print which takes in no arguments and returns a collection all of the current Node values
  in the Linked List.
  
  
