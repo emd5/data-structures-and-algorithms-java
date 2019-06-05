@@ -8,7 +8,7 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as 
 the methods created in previous challenges. 
 
-This loops through the array one time. Time and space is O(n).
+This loops through the array one time. Time and space is O(n) and O(1) respectively.
 
 ## Unit Tests
 - [x] Where k is greater than the length of the linked list

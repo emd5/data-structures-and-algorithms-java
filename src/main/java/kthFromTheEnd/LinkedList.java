@@ -10,7 +10,7 @@ import java.util.List;
 public class LinkedList {
 
     public Node head;
-    public Node current;
+
 
     public LinkedList(){
 
@@ -18,13 +18,51 @@ public class LinkedList {
 
     /**
      * This method takes a number, k, as a parameter. Return the node’s value that is k
-     * from
+     * from the LL.
      *
      *
-     * @param index
+     * @param kth the value length of list
+     * @return Returns a node of the value from the end of the linked list
      */
-    public int kthFromTheEnd(int index){
-        return 0;
+    public int kthFromTheEnd(int kth){
+        int counter = 0;
+        Node current = head;
+
+        while(current.next != null){
+            counter += 1;
+            current = current.next;
+        }
+
+        if(kth > counter){
+            throw new IllegalArgumentException("The kth value is greater than the length of the linked list");
+        }
+
+        int frontIndex = counter - kth;
+        current = head;
+
+        while(frontIndex != 0){
+            current = current.next;
+            frontIndex -= 1;
+        }
+
+        return current.data;
+    }
+
+    /**
+     * This method takes in no arguments and returns a collection all of the current Node values in the Linked List
+     *
+     * @return Node
+     */
+    public List<Node> print(){
+        List<Node> newList = new ArrayList<>();
+
+        Node current = head;
+
+        while(current != null){
+            newList.add(current);
+            current = current.next;
+        }
+        return newList;
     }
 
     /**
@@ -35,11 +73,10 @@ public class LinkedList {
     public void append(int value) throws AssertionError{
 
         if(head == null){
-            current = new Node(value);
-            head = current;
+            insert(value);
         }
         else{
-            current = head;
+            Node current = head;
 
             while (current.next != null) {
                 current = current.next;
@@ -62,7 +99,7 @@ public class LinkedList {
             head = new Node(newVal);
         }
         else{
-            current = head;
+            Node current = head;
 
             while(current.next.data != value){
                 current = current.next;
@@ -80,7 +117,7 @@ public class LinkedList {
      * @param newValue
      */
     public void insertAfter(int value, int newValue) throws NullPointerException{
-        current = head;
+        Node current = head;
 
         while(current.data != value){
             current = current.next;
@@ -116,7 +153,7 @@ public class LinkedList {
      * @return boolean
      */
     public boolean includes(int value){
-        current = head;
+        Node current = head;
         while(current != null){
             if(current.data == value){
                 return true;
@@ -124,23 +161,6 @@ public class LinkedList {
             current = current.next;
         }
         return false;
-    }
-
-    /**
-     * This method takes in no arguments and returns a collection all of the current Node values in the Linked List
-     *
-     * @return Node
-     */
-    public List<Node> print(){
-        List<Node> newList = new ArrayList<>();
-
-        current = head;
-
-        while(current != null){
-            newList.add(current);
-            current = current.next;
-        }
-        return newList;
     }
 
 }
