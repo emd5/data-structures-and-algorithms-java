@@ -1,4 +1,4 @@
-package kthFromTheEnd;
+package llMerge;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,7 @@ import java.util.List;
 public class LinkedList {
 
     public Node head;
+    private Node current;
 
 
     public LinkedList(){
@@ -17,48 +18,38 @@ public class LinkedList {
     }
 
     /**
-     * This method takes a number, k, as a parameter. Return the node’s value that is k
-     * from the LL.
-     *
-     *
-     * @param kth the value length of list
-     * @return Returns a node of the value from the end of the linked list
+     * This method accepts 2 different linked list, zips the second ll into the first ll.
+     * @param ll1 first linked list
+     * @param ll2 second list
+     * @return first linked list zipped with the second list
      */
-    public int kthFromTheEnd(int kth){
-        int lengthOfList = 0;
-        Node current = head;
+    public static LinkedList merge(LinkedList ll1, LinkedList ll2){
 
-        while(current.next != null){
-            lengthOfList += 1;
-            current = current.next;
+        if(ll1.head == null){
+            return ll2;
         }
 
-        if(kth > lengthOfList){
-            throw new IllegalArgumentException("The kth value is greater than the length of the linked list");
-        }
+        Node forward = ll1.head.next;
+        Node back = ll1.head;
+        ll2.current = ll2.head;
 
-        int frontIndex = lengthOfList - kth;
-        current = head;
+        while(forward != null){
 
-        while(frontIndex != 0){
-            current = current.next;
-            frontIndex -= 1;
-        }
-
-        return current.data;
-    }
-
-    public int kthFromTheEnd2(int kth){
-        Node forward = this.head;
-        Node back = this.head;
-
-        for(int i =0 ; forward != null; i++){
-            forward = forward.next;
-            if(i >= kth){
-                back = back.next;
+            if(ll2.current == null){
+                return ll1;
             }
+
+            ll2.head = ll2.current.next;
+            back.next = ll2.current;
+            ll2.current.next = forward;
+
+            ll2.current = ll2.head;
+            back = forward;
+            forward = forward.next;
         }
-        return back.data;
+
+        back.next = ll2.current;
+        return ll1;
     }
 
     /**
@@ -176,6 +167,32 @@ public class LinkedList {
         return false;
     }
 
+    public static void main(String[] args) {
+        LinkedList ll1 = new LinkedList();
+        ll1.append(1);
+        ll1.append(3);
+        ll1.append(5);
+        ll1.append(7);
+
+
+        LinkedList ll2 = new LinkedList();
+        ll2.append(2);
+//        ll2.append(4);
+//        ll2.append(6);
+//        ll2.append(8);
+
+        LinkedList newList = merge(ll1, ll2);
+
+        List<Node> listNode = newList.print();
+
+        for(Node value: listNode){
+            System.out.println(value.data);
+        }
+
+
+    }
+
 }
+
 
 
