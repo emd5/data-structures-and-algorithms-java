@@ -12,6 +12,7 @@ This repo contains my practice and adventures in Data Structures and Algorithms.
 - [Day 4: Linked List](/subReadMes/linkedList.md)
 - [Day 5: Linked List - Insertions](/subReadMes/linkedListInsertions.md)
 - [Day 6: Linked List - kth To The End](/subReadMes/kthFromTheEnd.md)
+- [Day 7: Linked List - Linked List Merge](/subReadMes/llMerge.md)
 
 
 
