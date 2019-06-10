@@ -65,11 +65,12 @@ public class StackTest {
         Stack stack = new Stack();
 
         stack.push(4);
+        stack.peek();
+        assertEquals("Should return 4", 4, stack.peek());
 
         stack.push(80);
 
-        assertEquals("Should return 4", 4, stack.peek());
-
+        assertEquals("Should return 4", 80, stack.peek());
     }
 
 
