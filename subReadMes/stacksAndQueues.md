@@ -12,11 +12,11 @@ To implement the linked list and node class. Created instance methods for the li
 
 ### Stacks
 
-[Code](../src/main/java/stacksAndQueues/stack.java) | [Tests](../src/test/java/stacksAndQueues/stackTest.java)
+[Code](../src/main/java/stacksAndQueues/Stack.java) | [Tests](../src/test/java/stacksAndQueues/StackTest.java)
 
 ### Queues
 
-[Code](../src/main/java/stacksAndQueues/queue.java) | [Tests](../src/test/java/stackAndQueues/queueTest.java)
+[Code](../src/main/java/stacksAndQueues/Queue.java) | [Tests](../src/test/java/stackAndQueues/QueueTest.java)
 
 
 ## Features

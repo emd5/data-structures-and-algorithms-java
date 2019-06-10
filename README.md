@@ -17,6 +17,7 @@ This repo contains my practice and adventures in Data Structures and Algorithms.
 ## Week 3 | Stacks and Queues
 
 - [Day 8: Stacks and Queues](/subReadMes/stacksAndQueues.md)
+- [Day 9: Queues With Stacks](/subReadMes/queueWithStacks.md)
 
 
 
