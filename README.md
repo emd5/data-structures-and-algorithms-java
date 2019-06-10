@@ -14,6 +14,10 @@ This repo contains my practice and adventures in Data Structures and Algorithms.
 - [Day 6: Linked List - kth To The End](/subReadMes/kthFromTheEnd.md)
 - [Day 7: Linked List - Linked List Merge](/subReadMes/llMerge.md)
 
+## Week 3 | Stacks and Queues
+
+- [Day 8: Stacks and Queues](/subReadMes/stacksAndQueues.md)
+
 
 
 
