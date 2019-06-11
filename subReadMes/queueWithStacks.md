@@ -17,7 +17,11 @@ Create two methods `enqueue()` and `dequeue()`.
 
 Using two stacks for enqueue method, create a node and push into stack 1. Then for stack 2, check to see if stack 1 
 is not null, if there is one then pop it from stack1. If there is more than one node from stack1, loop through and 
-add all nodes to stack2. The big O Time and space is O(1) and O(n) respectively.
+add all nodes to stack2.
+
+Time | Space
+--- | ---
+O(n) | O(1)
 
 ## Solution
 [Code](../src/main/java/queueWithStacks/QueueWithStacks.java) | [Tests](../src/test/java/queueWithStacks/QueueWithStacksTest.java)
