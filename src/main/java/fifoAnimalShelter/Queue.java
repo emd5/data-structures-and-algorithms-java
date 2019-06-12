@@ -2,42 +2,44 @@ package fifoAnimalShelter;
 
 public class Queue<T> {
 
-    private Node<T> front;
-    private Node<T> back;
-    private Node<T> temp;
+    protected Node<T> front;
+    protected Node<T> back;
+    protected Node<T> temp;
 
     public Queue(){
+        this.front = back;
+        back = null;
     }
 
     public void enqueue(T value){
         temp = new Node(value);
-        if(back == null){
-            front = temp;
-            back = temp;
+        if(this.back == null){
+            this.front = temp;
+            this.back = temp;
         }
         else{
-            back.next = temp;
-            back = temp;
+            this.back.next = temp;
+            this.back = temp;
         }
     }
 
     public T dequeue(){
-        if(front == null){
+        if(this.front == null){
             throw new NullPointerException("Queue is empty");
         }
         else{
-            temp = front;
-            front= front.next;
+            temp = this.front;
+            this.front= front.next;
             return temp.data;
         }
     }
 
     public T peek(){
-        if(front == null){
-            throw new NullPointerException("Queue is empty");
+        if(this.front == null){
+            throw new NullPointerException("Queue is empty when peeking");
         }
         else{
-            return front.data;
+            return this.front.data;
         }
     }
 

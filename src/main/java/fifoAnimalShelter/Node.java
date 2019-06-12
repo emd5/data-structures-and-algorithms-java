@@ -12,8 +12,7 @@ public class Node<T> {
      * The constructor of the node class that accepts data.
      * @param data
      */
-    public  Node(T data) {
-        this.next = null;
+    public Node(T data) {
         this.data = data;
     }
 

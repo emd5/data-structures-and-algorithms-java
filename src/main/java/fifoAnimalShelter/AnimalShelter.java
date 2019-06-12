@@ -1,10 +1,13 @@
 package fifoAnimalShelter;
 
-public class AnimalShelter {
+public class AnimalShelter extends Queue{
 
     protected Queue cat;
     protected Queue dog;
 
+    /**
+     * The constructor which creates two queues
+     */
     public AnimalShelter(){
         this.cat = new Queue();
         this.dog = new Queue();
@@ -15,7 +18,7 @@ public class AnimalShelter {
      *
      * @param cat cat string
      */
-    public void enqueueCat(Cat cat){
+    public void enqueue(Cat cat){
         this.cat.enqueue(cat);
     }
 
@@ -24,7 +27,7 @@ public class AnimalShelter {
      *
      * @param dog dog string
      */
-    public void enqueueDog(Dog dog){
+    public void enqueue(Dog dog){
         this.dog.enqueue(dog);
     }
 
@@ -34,7 +37,7 @@ public class AnimalShelter {
      * @param cat cat object
      * @return cat object
      */
-    public Object dequeueCat(Cat cat){
+    public Object dequeue(Cat cat){
         return this.cat.dequeue();
     }
 
@@ -45,7 +48,7 @@ public class AnimalShelter {
      * @param dog dog object
      * @return dog object
      */
-    public Object dequeueDog(Dog dog){
+    public Object dequeue(Dog dog){
         return this.dog.dequeue();
     }
 
