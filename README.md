@@ -18,6 +18,7 @@ This repo contains my practice and adventures in Data Structures and Algorithms.
 
 - [Day 8: Stacks and Queues](/subReadMes/stacksAndQueues.md)
 - [Day 9: Queues With Stacks](/subReadMes/queueWithStacks.md)
+- [Day 10: FIFO Animal Shelter](/subReadMes/fifoAnimalShelter.md)
 
 
 
