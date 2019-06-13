@@ -12,4 +12,5 @@ This loops through the array one time. Time and space is O(n).
 
 ## Solution
 [Code](../src/main/java/arrayShift/ArrayShift.java) | [Tests](../src/test/java/arrayShift/ArrayShiftTest.java)
+
 ![White Board to Array Shift problem](../assets/arrayShift.jpg)
