@@ -20,7 +20,7 @@ public class AnimalShelterTest {
         AnimalShelter animalShelter = new AnimalShelter();
         Dog fido = new Dog("fido");
         animalShelter.enqueue(fido);
-        assertEquals("Should return fido", "bob", animalShelter.dequeue(fido).toString());
+        assertEquals("Should return fido", "fido", animalShelter.dequeue(fido).toString());
     }
 
     @Test
