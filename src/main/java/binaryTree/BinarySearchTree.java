@@ -73,10 +73,7 @@ public class BinarySearchTree {
     public List<Integer> inorderHelper(List<Integer> list, Node node){
         if (node != null) {
             inorderHelper(list, node.getLeft());
-
-            System.out.print(" " + node.getData());
             list.add(node.getData());
-
             inorderHelper(list, node.getRight());
         }
         return list;
@@ -91,10 +88,7 @@ public class BinarySearchTree {
     public List<Integer> postorderHelper(List list, Node node) {
         if (node != null) {
             postorderHelper(list, node.getLeft());
-
             postorderHelper(list, node.getRight());
-
-//            System.out.print(" " + node.getData());
             list.add(node.getData());
         }
         return list;
@@ -103,16 +97,5 @@ public class BinarySearchTree {
     @Override
     public String toString() {
         return "BinarySearchTree: " + root;
-    }
-
-    public static void main(String[] args) {
-        BinarySearchTree tree = new BinarySearchTree();
-        tree.add(4);
-        tree.add(80);
-        tree.add(23);
-
-        System.out.println("root:"+ tree.root.getData());
-        System.out.println("left:"+tree.root.getLeft());
-        System.out.println("r:"+tree.root.getRight());
     }
 }
