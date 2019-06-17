@@ -22,6 +22,10 @@ This repo contains my practice and adventures in Data Structures and Algorithms.
 - [Day 11: Multi Bracket Validation](/subReadMes/multiBracket.md)
 
 
+## Week 4 | Binary Trees
+
+- [Day 11: Binary Trees](/subReadMes/trees.md)
+
 
 
 
