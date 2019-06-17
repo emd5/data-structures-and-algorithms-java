@@ -89,18 +89,14 @@ public class BinarySearchTreeTest {
         tree.add(81);
         tree.add(23);
 
-//        List<Integer> actualList = tree.inorderHelper(new ArrayList<>(),tree.root);
         List<Integer> list =new ArrayList<>();
-        list.add(23);
         list.add(4);
+        list.add(23);
         list.add(81);
 
         List actualList = tree.inorder();
-
-
-        assertEquals("In order should be [23, 4, 81]", list, actualList);
+        assertEquals("In order should be [4, 23, 81]", list, actualList);
     }
-
 
     @Test
     public void binaryTree_testPostOrder(){
