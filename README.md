@@ -20,6 +20,10 @@ This repo contains my practice and adventures in Data Structures and Algorithms.
 - [Day 9: Queues With Stacks](/subReadMes/queueWithStacks.md)
 - [Day 10: FIFO Animal Shelter](/subReadMes/fifoAnimalShelter.md)
 
+## Week 4 | Binary Trees
+
+- [Day 11: Binary Trees](/subReadMes/trees.md)
+
 
 
 
