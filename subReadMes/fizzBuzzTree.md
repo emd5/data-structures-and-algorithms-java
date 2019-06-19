@@ -15,7 +15,7 @@ Conduct “FizzBuzz” on a tree while traversing through it. Change the values 
 For explicitly-typed languages: Ensure your node values are of type Object, to hold either strings or integers.
 
 ## Solution
-[Code](../src/main/java/fizzBuzzTree/FizzBuzzTree.java) | [Tests](../src/test/java/fizzBuzzTree/FizzBuzzTree.java)
+[Code](../src/main/java/fizzBuzzTree/FizzBuzzTree.java) | [Tests](../src/test/java/fizzBuzzTree/FizzBuzzTreeTest.java)
 
 ![White Board to Array Shift problem](../assets/fizzbuzz.jpg)
 
