@@ -3,35 +3,21 @@ package fizzBuzzTree;
 /**
  * Node class with data and left and right pointer.
  **/
-public class Node<T> {
+public class Node{
 
-    public T data;
-    public Node<T> left;
-    public Node<T> right;
+    public Object data;
+    public Node left;
+    public Node right;
 
     /**
      * The constructor of the node class that accepts data.
      * @param data
      */
-    public Node(T data) {
+    public Node(Object data) {
         this.data = data;
         this.right = null;
         this.left = null;
     }
-
-    public T getData() { return this.data; }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public Node<T> getLeft() { return this.left; }
-
-    public void setLeft(Node<T> left) { this.left = left; }
-
-    public Node<T> getRight() { return this.right; }
-
-    public void setRight(Node<T> right) { this.right = right; }
 
     /**
      * String representation of the Node class
@@ -39,6 +25,6 @@ public class Node<T> {
      */
     @Override
     public String toString() {
-        return "data=" + getData() + " right= "+ getRight() +" left= "+ getLeft() + " | ";
+        return "data=" + data + " right= "+ right+" left= "+ left + " | ";
     }
 }

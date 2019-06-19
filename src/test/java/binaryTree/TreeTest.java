@@ -7,7 +7,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class BinarySearchTreeTest {
+public class TreeTest {
     // Test add to empty tree works
     @Test
     public void binaryTree_addToEmptyTree() {
