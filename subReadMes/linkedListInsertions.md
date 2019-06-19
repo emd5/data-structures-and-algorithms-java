@@ -11,9 +11,7 @@ Linked list insertions by implementing the following:
 ## Approach & Efficiency
 Writing each method inside the Linked List class.
 
-
 ## Features
-
 
 Write tests to prove the following functionality:
 
