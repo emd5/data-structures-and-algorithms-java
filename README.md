@@ -25,7 +25,8 @@ This repo contains my practice and adventures in Data Structures and Algorithms.
 ## Week 4 | Binary Trees
 
 - [Day 11: Binary Trees](/subReadMes/trees.md)
-- [Day 11: Fizz Buzz](/subReadMes/fizzBuzzTree.md)
+- [Day 12: Fizz Buzz](/subReadMes/fizzBuzzTree.md)
+- [Day 13: Breadth First Search](/subReadMes/breadthFirst.md)
 
 
 
