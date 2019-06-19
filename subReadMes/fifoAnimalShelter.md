@@ -27,9 +27,6 @@ Dequeue will have S: O(n) T: O(1)
 ![White Board to FIFO Animal Shelter problem](../assets/fifoAnimalShelter.jpg)
 
 
-## Features 
-
-
 ## Checklist
 - [x] Top-level README “Table of Contents” is updated
 - [x] Feature tasks for this challenge are completed

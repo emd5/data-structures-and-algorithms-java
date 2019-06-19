@@ -3,16 +3,16 @@ package stacksAndQueues;
 /**
  * Node class with data and next pointer.
  **/
-public class Node {
+public class Node<T> {
 
-    public Node next;
-    public int data;
+    public Node<T> next;
+    public T data;
 
     /**
      * The constructor of the node class that accepts data.
      * @param data
      */
-    public  Node(int data) {
+    public  Node(T data) {
         this.next = null;
         this.data = data;
     }

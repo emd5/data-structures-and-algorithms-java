@@ -96,6 +96,6 @@ public class BinarySearchTree {
 
     @Override
     public String toString() {
-        return "Tree: " + root;
+        return "BinaryTree: " + root;
     }
 }

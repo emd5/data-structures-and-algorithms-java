@@ -1,16 +1,17 @@
 package stacksAndQueues;
 
-public class Queue {
+public class Queue<T> {
 
-    private Node front;
-    private Node back;
-    private Node temp;
+    public Node<T> front;
+    public Node<T> back;
+    public Node<T> temp;
 
     public Queue(){
     }
 
-    public void enqueue(int value){
-        temp = new Node(value);
+    public void enqueue(T value){
+        Node<T> newNode = new Node(value);
+        temp = newNode;
         if(back == null){
             front = temp;
             back = temp;
@@ -21,7 +22,7 @@ public class Queue {
         }
     }
 
-    public int dequeue(){
+    public T dequeue(){
         if(front == null){
             throw new NullPointerException("Queue is empty");
         }
@@ -32,7 +33,7 @@ public class Queue {
         }
     }
 
-    public int peek(){
+    public T peek(){
         if(front == null){
             throw new NullPointerException("Queue is empty");
         }
@@ -40,16 +41,4 @@ public class Queue {
             return front.data;
         }
     }
-
-    public static void main(String[] args) {
-        Queue queue = new Queue();
-        queue.enqueue(3);
-        System.out.println(queue.peek());
-
-        queue.enqueue(45);
-        queue.dequeue();
-        System.out.println(queue.peek());
-    }
-
-
 }

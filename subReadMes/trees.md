@@ -43,8 +43,8 @@ that value exists as a Node’s value somewhere within the list.
  
 ***Test***
  
- - [x]  Can successfully instantiate an empty tree
- - [x]  Can successfully instantiate a tree with a single root node
+ - [x]  Can successfully instantiate an empty binaryTree
+ - [x]  Can successfully instantiate a binaryTree with a single root node
  - [x]  Can successfully add a left child and right child to a single root node
  - [x]  Can successfully return a collection from a preorder traversal
  - [x]  Can successfully return a collection from an inorder traversal
