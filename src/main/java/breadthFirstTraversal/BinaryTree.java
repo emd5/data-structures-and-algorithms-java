@@ -50,27 +50,27 @@ public class BinaryTree<T extends Comparable<T>>{
         return list;
     }
 
-    public List<T> breadthFirstTraversal(){
-        List<T> list = new ArrayList<>();
-        if(this.root != null){
-            Queue q = new LinkedList();
-            q.offer(this.root);
-            while(q.peek() != null){
-                Node front = q.poll();
-                list.add(front.data);
-                if(front.left != null){
-                    q.offer(front.left);
-                }
-                if(front.right !=null){
-                    q.offer(front.right);
-                }
-            }
-        }
-        else{
-            throw new NullPointerException("Empty Queue");
-        }
-        return list;
-    }
+//    public List<T> breadthFirstTraversal(){
+//        List<T> list = new ArrayList<>();
+//        if(this.root != null){
+//            Queue q = new LinkedList();
+//            q.offer(this.root);
+//            while(q.peek() != null){
+//                Node front = q.poll();
+//                list.add(front.data);
+//                if(front.left != null){
+//                    q.offer(front.left);
+//                }
+//                if(front.right !=null){
+//                    q.offer(front.right);
+//                }
+//            }
+//        }
+//        else{
+//            throw new NullPointerException("Empty Queue");
+//        }
+//        return list;
+//    }
 
     public static void main(String[] args) {
         BinaryTree binaryTree = new BinaryTree();
@@ -79,10 +79,10 @@ public class BinaryTree<T extends Comparable<T>>{
         binaryTree.root.left.data = new Node(20);
         binaryTree.root.right.data = new Node(80);
 
-        List bfsList= binaryTree.breadthFirstTraversal();
-        for(Object eachNode : bfsList){
-            System.out.println(eachNode);
-        }
+//        List bfsList= binaryTree.breadthFirstTraversal();
+//        for(Object eachNode : bfsList){
+//            System.out.println(eachNode);
+//        }
 
     }
 

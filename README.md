@@ -1,5 +1,9 @@
 # Data-Structures-and-Algorithms
-This repo contains my practice and adventures in Data Structures and Algorithms. 
+
+This repo contains my practice and adventures in Data Structures and Algorithms using Java. 
+
+## Author
+Liz Mahoney
 
 ## Week 1 | Arrays
 
@@ -27,7 +31,8 @@ This repo contains my practice and adventures in Data Structures and Algorithms.
 - [Day 11: Binary Trees](/subReadMes/trees.md)
 - [Day 12: Fizz Buzz](/subReadMes/fizzBuzzTree.md)
 - [Day 13: Breadth First Search](/subReadMes/breadthFirst.md)
+- [Day 14: Find Maximum value w/ Binary Tree](/subReadMes/findMaxTree.md)
 
-
+## Week 5 | Graphs
 
 
