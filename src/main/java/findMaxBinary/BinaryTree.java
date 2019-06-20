@@ -11,20 +11,6 @@ public class BinaryTree {
         this.root = null;
     }
 
-    public List<Integer> inorder(){
-        List<Integer> list = new ArrayList<>();
-        return inorderHelper(list, root);
-    }
-
-    private List<Integer> inorderHelper(List<Integer> list, Node node){
-        if (node != null) {
-            inorderHelper(list, node.getLeft());
-            list.add(node.getData());
-            inorderHelper(list, node.getRight());
-        }
-        return list;
-    }
-
     public int findMax(Node node){
         if (node == null){
             return 0;
