@@ -5,9 +5,9 @@ package binaryTree;
  **/
 public class Node {
 
-    private int data;
-    private Node left;
-    private Node right;
+    public int data;
+    public Node left;
+    public Node right;
 
     /**
      * The constructor of the node class that accepts data.
