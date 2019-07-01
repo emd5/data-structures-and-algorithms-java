@@ -33,6 +33,8 @@ Liz Mahoney
 - [Day 13: Breadth First Search](/subReadMes/breadthFirst.md)
 - [Day 14: Find Maximum value w/ Binary Tree](/subReadMes/findMaxTree.md)
 
-## Week 5 | Graphs
+## Week 5 | Sorting
+- [Day 15: Insertion Sort](/subReadMes/insetionSort.md)
+
 
 
