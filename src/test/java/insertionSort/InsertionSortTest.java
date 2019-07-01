@@ -42,5 +42,4 @@ public class InsertionSortTest {
         InsertionSort.insertionSort(numList);
         assertTrue("Should return false",  Arrays.equals(expected,numList));
     }
-
 }

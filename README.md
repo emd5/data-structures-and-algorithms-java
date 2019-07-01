@@ -34,7 +34,7 @@ Liz Mahoney
 - [Day 14: Find Maximum value w/ Binary Tree](/subReadMes/findMaxTree.md)
 
 ## Week 5 | Sorting
-- [Day 15: Insertion Sort](/subReadMes/insetionSort.md)
+- [Day 15: Insertion Sort](/subReadMes/insertionSort.md)
 
 
 
