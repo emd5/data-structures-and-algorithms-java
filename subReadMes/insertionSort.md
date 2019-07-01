@@ -45,7 +45,6 @@ https://www.youtube.com/watch?v=i-SKeOcBwko
 ### Reading
 https://www.geeksforgeeks.org/insertion-sort/
 
-
 ## Checklist
 - [x] Top-level README “Table of Contents” is updated
 - [x] Feature tasks for this challenge are completed
