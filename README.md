@@ -35,6 +35,8 @@ Liz Mahoney
 
 ## Week 5 | Sorting
 - [Day 15: Insertion Sort](/subReadMes/insertionSort.md)
+- [Day 16: Merge Sort](/subReadMes/mergeSort.md)
+
 
 
 
