@@ -25,7 +25,6 @@ Liz Mahoney
 - [Day 10: FIFO Animal Shelter](/subReadMes/fifoAnimalShelter.md)
 - [Day 11: Multi Bracket Validation](/subReadMes/multiBracket.md)
 
-
 ## Week 4 | Binary Trees
 
 - [Day 11: Binary Trees](/subReadMes/trees.md)
@@ -34,8 +33,11 @@ Liz Mahoney
 - [Day 14: Find Maximum value w/ Binary Tree](/subReadMes/findMaxTree.md)
 
 ## Week 5 | Sorting
+
 - [Day 15: Insertion Sort](/subReadMes/insertionSort.md)
 - [Day 16: Merge Sort](/subReadMes/mergeSort.md)
+- [Day 17: Quick Sort](/subReadMes/quickSort.md)
+
 
 
 
