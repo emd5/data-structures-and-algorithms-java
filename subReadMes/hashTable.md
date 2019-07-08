@@ -19,7 +19,7 @@ Implement a Hashtable with the following methods: `add()`, `get()`, `contains()`
 
 - [x] Define a method called get which takes in the key and returns the value from the table.
 
-***contains()*** S: O(1) T: O(n)
+***contains()*** S: O(n) T: O(n)
 
 - [x] Define a method called contains takes in the key and returns a boolean, indicating if the key exists in the table already.
  

@@ -38,6 +38,12 @@ Liz Mahoney
 - [Day 16: Merge Sort](/subReadMes/mergeSort.md)
 - [Day 17: Quick Sort](/subReadMes/quickSort.md)
 
+## Week 6 | HashTable
+- [Day 18: HashTables](/subReadMes/hashTable.md)
+
+
+
+
 
 
 
