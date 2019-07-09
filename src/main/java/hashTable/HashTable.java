@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 /**
  * This is the implementation of the hashtable
- * @param <T> 
+ * @param <T>
  */
 public class HashTable<T> {
 
@@ -56,12 +56,11 @@ public class HashTable<T> {
      */
     @SuppressWarnings("unchecked")
     public T get(String key){
-
         int index = hash(key);
 
         if(this.bucket[index] != null) {
             for (Node node : this.bucket[index]) {
-                if(node.key.equals(key)){
+                if (node.key.equals(key)) {
                     return (T) node.value;
                 }
             }
@@ -117,11 +116,12 @@ public class HashTable<T> {
         hashTable.add("Miko", "dog");
         hashTable.add("Hamster", "Buttons");
         hashTable.add("Hamster", "Rhino");
-        hashTable.add("Hamster", "Bally");
+        hashTable.add("Hamster", "Sam");
         hashTable.add("Hamster", "Snowball");
         hashTable.add("German Shepard", "Germy");
         hashTable.add("Zebra", "Stripes");
 
+        System.out.println("Get: " + hashTable.get("Hello"));
 
         for(LinkedList n :  hashTable.bucket){
             System.out.print(n + ", ");
@@ -129,8 +129,6 @@ public class HashTable<T> {
                 System.out.println(n.size());
             }
         }
-
-
 
     }
 }

@@ -9,15 +9,6 @@ import static org.junit.Assert.*;
 
 public class HashTableTest {
 
-    /**
-     * Adding a key/value to your hashtable results in the value being in the data structure
-     * Retrieving based on a key returns the value stored
-     * Successfully returns null for a key that does not exist in the hashtable
-     * Successfully handle a collision within the hashtable
-     * Successfully retrieve a value from a bucket within the hashtable that has a collision
-     * Successfully hash a key to an in-range value
-     * **/
-
     // Adding a key/value to your hashtable results in the value being in the data structure
     @Test
     public void addHashTable(){
@@ -79,29 +70,4 @@ public class HashTableTest {
 
         assertFalse("Should return ", hashTable.contains("Hello"));
     }
-
-    @Test
-    public void getValueFromCollisionKey(){
-        HashTable hashTable = new HashTable();
-        hashTable.add("Yoko", "Rabbit");
-        hashTable.add("Hamster", "Rhino");
-        hashTable.add("Hamster", "Hammy");
-        hashTable.add("Hamster", "Hammy");
-        hashTable.add("German Shepard", "Samantha");
-        hashTable.add("Zebra", "Stripes");
-
-
-        hashTable.get("Hamster");
-//        for(String n :  hashTable.get("Hamster")){
-//            System.out.print(n + ", ");
-//            if(n != null){
-//                System.out.println(n.size());
-//            }
-//        }
-    }
-
-
-
-
-
 }
