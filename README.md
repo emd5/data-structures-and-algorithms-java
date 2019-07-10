@@ -40,6 +40,8 @@ Liz Mahoney
 
 ## Week 6 | HashTable
 - [Day 18: HashTables](/subReadMes/hashTable.md)
+- [Day 19: Repeated Word](/subReadMes/repeatedWord.md)
+
 
 
 
