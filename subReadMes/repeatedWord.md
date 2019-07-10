@@ -6,7 +6,7 @@ Write a function that accepts a lengthy string parameter.
 ## Approach & Efficiency
 
 ## Solution
-[Code](../src/main/java/repeatedWord/RepeatedWord.java) | [Tests](../src/test/java/repeatedWord/repeatedWordTest.java)
+[Code](../src/main/java/repeatedWord/RepeatedWord.java) | [Tests](../src/test/java/repeatedWord/RepeatedWordTest.java)
 
 ![White Board to Repeated Word problem](../assets/repeatedword.jpg)
 
