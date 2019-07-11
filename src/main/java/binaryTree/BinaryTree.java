@@ -3,11 +3,11 @@ package binaryTree;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BinarySearchTree {
+public class BinaryTree {
 
     public Node root;
 
-    public BinarySearchTree(){}
+    public BinaryTree(){}
 
     public void add(int value){
         this.root = addHelper(this.root, value);

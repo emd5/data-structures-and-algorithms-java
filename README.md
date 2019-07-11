@@ -41,6 +41,10 @@ Liz Mahoney
 ## Week 6 | HashTable
 - [Day 18: HashTables](/subReadMes/hashTable.md)
 - [Day 19: Repeated Word](/subReadMes/repeatedWord.md)
+- [Day 20: Tree Intersection](/subReadMes/treeIntersection.md)
+- [Day 21: Left Join](/subReadMes/leftJoin.md)
+
+
 
 
 
