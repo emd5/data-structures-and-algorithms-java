@@ -11,7 +11,7 @@ public class BinaryTreeTest {
     // Test add to empty tree works
     @Test
     public void binaryTree_addToEmptyTree() {
-        BinarySearchTree tree = new BinarySearchTree();
+        BinaryTree tree = new BinaryTree();
         tree.add(4);
 
         assertEquals("Should return 4", 4, tree.root.getData());
@@ -20,7 +20,7 @@ public class BinaryTreeTest {
     // Test add to existing tree works
     @Test
     public void binaryTree_addToExistingTree() {
-        BinarySearchTree tree = new BinarySearchTree();
+        BinaryTree tree = new BinaryTree();
         tree.add(4);
         tree.add(80);
         tree.add(23);
@@ -31,7 +31,7 @@ public class BinaryTreeTest {
     // Test contains method is true works
     @Test
     public void binarySearchTree_containsTrue() {
-        BinarySearchTree tree = new BinarySearchTree();
+        BinaryTree tree = new BinaryTree();
         tree.add(4);
         tree.add(80);
         tree.add(23);
@@ -44,7 +44,7 @@ public class BinaryTreeTest {
     // Test contains method false works
     @Test
     public void binarySearchTree_containsFalse() {
-        BinarySearchTree tree = new BinarySearchTree();
+        BinaryTree tree = new BinaryTree();
         tree.add(4);
         tree.add(80);
         tree.add(23);
@@ -57,7 +57,7 @@ public class BinaryTreeTest {
     // Test to String method works
     @Test
     public void binaryTree_testToString() {
-        BinarySearchTree tree = new BinarySearchTree();
+        BinaryTree tree = new BinaryTree();
         tree.add(4);
         tree.add(80);
         tree.add(23);
@@ -67,7 +67,7 @@ public class BinaryTreeTest {
 
     @Test
     public void binaryTree_testPreOrder(){
-        BinarySearchTree tree = new BinarySearchTree();
+        BinaryTree tree = new BinaryTree();
         tree.add(4);
         tree.add(80);
         tree.add(23);
@@ -84,7 +84,7 @@ public class BinaryTreeTest {
 
     @Test
     public void binaryTree_testInOrder(){
-        BinarySearchTree tree = new BinarySearchTree();
+        BinaryTree tree = new BinaryTree();
         tree.add(4);
         tree.add(81);
         tree.add(23);
@@ -100,7 +100,7 @@ public class BinaryTreeTest {
 
     @Test
     public void binaryTree_testPostOrder(){
-        BinarySearchTree tree = new BinarySearchTree();
+        BinaryTree tree = new BinaryTree();
         tree.add(4);
         tree.add(80);
         tree.add(23);
