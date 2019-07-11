@@ -15,7 +15,7 @@ O(m+n) | O(n)
 ## Solution
 [Code](../src/main/java/treeIntersection/TreeIntersection.java) | [Tests](../src/test/java/treeIntersection/TreeIntersectionTest.java)
 
-![White Board to Tree Intersection problem](../assets/treeIntersection.jpg)
+![White Board to Tree Intersection problem](../assets/treeintersection.jpg)
 
 ## Features
  
