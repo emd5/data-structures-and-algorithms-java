@@ -6,7 +6,7 @@ public class RepeatedWord {
 
     public static String repeatedWord(String inputWord) {
 
-        String[] wordArray = inputWord.split("\\s*(=>|,|\\s)\\s*");
+        String[] wordArray = inputWord.split("\\s*(=>|([,.!?\"'>}])|\\s)\\s*");
         HashSet hashSet = new HashSet();
 
         for (int i = 0; i < wordArray.length; i++) {
@@ -17,5 +17,9 @@ public class RepeatedWord {
             }
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(repeatedWord("This is summer, I know summer."));
     }
 }
