@@ -11,15 +11,15 @@ To implement the Graph and node class. Created instance methods for the Graph cl
 ## Solution
 [Code](../src/main/java/graph/Graph.java) | [Tests](../src/test/java/graph/Graph.java)
 
-## Features
+## API
 
-***addNode()*** S: O(v) T: O(v)
+***addNode()*** S: O(|v| + |e|) T: O(1)
 
 - Adds a new node to the graph
 - Takes in the value of that node
 - Returns the added node
 
-***addEdge()*** S: O(e) T: O(e)
+***addEdge()*** S: O(|v| + |e|) T: O(1)
 
 - Adds a new edge between two nodes in the graph
 - Include the ability to have a “weight”
@@ -53,8 +53,6 @@ Write tests to prove the following functionality:
 - [x] The proper size is returned, representing the number of nodes in the graph
 - [x] A graph with only one node and edge can be properly returned
 - [x] An empty graph properly returns null
- 
- - [x]  
 
 ## Checklist
 - [x] Top-level README “Table of Contents” is updated
