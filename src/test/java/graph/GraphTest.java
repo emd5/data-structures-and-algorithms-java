@@ -1,6 +1,5 @@
 package graph;
 
-import hashTable.HashTable;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -8,6 +7,12 @@ import java.util.HashSet;
 import static org.junit.Assert.*;
 
 public class GraphTest {
+
+    @Test
+    public void emptyGraph(){
+        Graph graph = new Graph();
+        assertEquals("Should be null", 0, graph.getSize());
+    }
 
     @Test
     public void addNode() {
