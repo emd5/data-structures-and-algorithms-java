@@ -9,7 +9,7 @@ To implement the Graph and node class. Created instance methods for the Graph cl
 
 
 ## Solution
-[Code](../src/main/java/graph/Graph.java) | [Tests](../src/test/java/graph/Graph.java)
+[Code](../src/main/java/graph/Graph.java) | [Tests](../src/test/java/graph/GraphTest.java)
 
 ## API
 
