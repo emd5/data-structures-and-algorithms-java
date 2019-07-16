@@ -21,14 +21,6 @@ O(v) | O(v)
 
 ![White Board to BFS Graph Problem](../assets/bfsGraph.jpg)
 
-***Test***
- 
-Write tests to prove the following functionality:
-
-- [x] Test if ALL keys match
-- [x] Test if Some keys match
-- [x] Test with second empty hashmap
-
 
 ## Checklist
 - [x] Top-level README “Table of Contents” is updated
