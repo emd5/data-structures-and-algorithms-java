@@ -73,6 +73,4 @@ public class StackTest {
         assertEquals("Should return 4", 80, stack.peek());
     }
 
-
-
 }

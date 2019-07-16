@@ -1,5 +1,8 @@
 package stacksAndQueues;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Queue<T> {
 
     public Node<T> front;
@@ -40,5 +43,20 @@ public class Queue<T> {
         else{
             return front.data;
         }
+    }
+
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+
+        Queue q = new Queue();
+        q.enqueue(4);
+        q.enqueue(8);
+        q.enqueue(17);
+        q.enqueue(24);
+
+        while(q.front != null){
+            list.add((Integer) q.dequeue());
+        }
+        System.out.println(list);
     }
 }
