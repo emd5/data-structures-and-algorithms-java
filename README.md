@@ -47,6 +47,8 @@ Liz Mahoney
 ## Week 7 | Graph
 - [Day 22: Graph](/subReadMes/graph.md)
 - [Day 23: Breadth First Search](/subReadMes/bfsGraph.md)
+- [Day 24: Get Edges](/subReadMes/getEdges.md)
+
 
 
 

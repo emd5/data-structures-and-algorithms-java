@@ -29,16 +29,16 @@ public class BinaryTree {
         if(n ==null){
             return 0;
         }
-        else{
-            int sumLeft = findMax2(n.left);
-            int sumRight = findMax(n.right);
-            if(sumLeft > sumRight){
-                return n.data + sumLeft;
-            }
-            else{
-                return n.data + sumRight;
-            }
+
+        int sumLeft = findMax2(n.left);
+        int sumRight = findMax2(n.right);
+        if(sumLeft > sumRight){
+            return n.data + sumLeft;
         }
+        else{
+            return n.data + sumRight;
+        }
+
     }
 
     public static void main(String[] args) {

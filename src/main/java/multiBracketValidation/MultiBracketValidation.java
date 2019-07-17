@@ -35,19 +35,14 @@ public class MultiBracketValidation {
             }
         }
 
-        if(stack.isEmpty()){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return stack.isEmpty();
     }
 
     public static void main(String[] args) {
-        System.out.println(multiBracketValidation("{Hello}"));
-        System.out.println(multiBracketValidation("{}"));
-        System.out.println(multiBracketValidation("{[]}"));
-        System.out.println(multiBracketValidation("{({}"));
+        System.out.println(multiBracketValidation("{Hello}")); //true
+        System.out.println(multiBracketValidation("{}")); //true
+        System.out.println(multiBracketValidation("{[]}")); //true
+        System.out.println(multiBracketValidation("{({}")); //false
 
     }
 
