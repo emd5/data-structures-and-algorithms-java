@@ -4,8 +4,6 @@
 
 package arrayShift;
 
-import java.util.Arrays;
-
 public class ArrayShift {
 
     public int[] arrayShift(int[] inputArray, int value){
