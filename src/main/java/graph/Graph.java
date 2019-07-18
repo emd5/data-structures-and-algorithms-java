@@ -26,6 +26,10 @@ public class Graph<T> {
         return false;
    }
 
+   public void getEdges(String[] input){
+
+    }
+
    public HashSet<Node<T>>getNodes(){
        return this.vertices;
    }

@@ -26,19 +26,19 @@ public class BinaryTree {
     }
 
     public int findMax2(Node n){
-        if(n ==null){
+        if(n == null){
             return 0;
         }
 
         int sumLeft = findMax2(n.left);
         int sumRight = findMax2(n.right);
+
         if(sumLeft > sumRight){
             return n.data + sumLeft;
         }
         else{
             return n.data + sumRight;
         }
-
     }
 
     public static void main(String[] args) {
